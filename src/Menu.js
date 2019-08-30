@@ -1,6 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import MenuItem from "./MenuItem";
+import Login from "./Login"
+
 
 
 export default class Menu extends React.Component {
@@ -15,6 +17,7 @@ export default class Menu extends React.Component {
             <ul>
                 {items}
             </ul>
+                <Login />
             </div>
     }
 }
