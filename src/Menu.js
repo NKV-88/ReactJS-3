@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MenuItem from "./MenuItem";
-import Login from "./Login"
+
 
 
 
@@ -14,15 +14,14 @@ export default class Menu extends React.Component {
         })
         return <div>
             <h1>{this.props.titleMenu}</h1>
-            <ul>
+            <ul className="d-flex">
                 {items}
             </ul>
-                <Login />
             </div>
     }
 }
 
-MenuItem.propTypes = {
+/*MenuItem.propTypes = {
     items: PropTypes.string.isRequired,
     titleMenu: PropTypes.string.isRequired,
-}
+}*/
