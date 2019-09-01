@@ -1,6 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import MenuItem from "./MenuItem";
+
+
 
 
 export default class Menu extends React.Component {
@@ -12,14 +14,14 @@ export default class Menu extends React.Component {
         })
         return <div>
             <h1>{this.props.titleMenu}</h1>
-            <ul>
+            <ul className="d-flex">
                 {items}
             </ul>
             </div>
     }
 }
 
-MenuItem.propTypes = {
+/*MenuItem.propTypes = {
     items: PropTypes.string.isRequired,
     titleMenu: PropTypes.string.isRequired,
-}
+}*/

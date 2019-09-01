@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 export default class MenuItem extends React.Component {
     render () {
-        return <li><a href={this.props.href}>{this.props.children}</a></li>
+        return <li className="mr-5"><a href={this.props.href}>{this.props.children}</a></li>
     }
 }
 
